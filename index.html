@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Bali Tour - Paket Wisata Bali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Harmony Bali Tour</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#paket" data-i18n="nav_packages">Packages</a></li>
+                    <li><a href="#galeri" data-i18n="nav_gallery">Gallery</a></li>
+                    <li><a href="#tentang" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="#kontak" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20paket%20wisata" class="btn-whatsapp" target="_blank" data-i18n="btn_book_nav">Book Now</a>
+                <div class="lang-switch">
+                    <button onclick="changeLanguage('en')" class="lang-btn active">EN</button> | 
+                    <button onclick="changeLanguage('id')" class="lang-btn">ID</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 data-i18n="hero_title">Explore the Beauty of Bali With Us</h2>
+            <p data-i18n="hero_desc">Complete tour packages, affordable prices, professional service</p>
+            <a href="#paket" class="btn-primary" data-i18n="hero_btn">View Packages</a>
+        </div>
+    </section>
+
+    <!-- Paket Wisata Section -->
+    <section id="paket" class="paket">
+        <div class="container">
+            <h2 data-i18n="sect_packages">Bali Tour Packages</h2>
+            <div class="paket-grid">
+                <div class="paket-card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Uluwatu Tour">
+                    <h3 data-i18n="card_uluwatu_title">Bali 1 Day Package (Uluwatu Tour)</h3>
+                    <p><strong data-i18n="lbl_duration">Duration:</strong> 1 Day</p>
+                    <p><strong data-i18n="lbl_dest">Destination:</strong> <span data-i18n="card_uluwatu_dest">Uluwatu, Kecak Dance, Jimbaran Beach</span></p>
+                    <p><strong data-i18n="lbl_facilities">Facilities:</strong> <span data-i18n="card_uluwatu_fac">Transport, Entrance Tickets, Lunch</span></p>
+                    <p class="harga">Rp 500.000</p>
+                    <a href="detail.html?id=uluwatu" class="btn-secondary" data-i18n="btn_detail">View Detail</a>
+                </div>
+                <div class="paket-card">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bali Temple Tour">
+                    <h3 data-i18n="card_2d1n_title">Bali 2 Days 1 Night Package</h3>
+                    <p><strong data-i18n="lbl_duration">Duration:</strong> 2 Days 1 Night</p>
+                    <p><strong data-i18n="lbl_dest">Destination:</strong> <span data-i18n="card_2d1n_dest">Tanah Lot, Ubud, Tegallalang Rice Terrace</span></p>
+                    <p><strong data-i18n="lbl_facilities">Facilities:</strong> <span data-i18n="card_2d1n_fac">Hotel, Transport, 3x Meals, Guide</span></p>
+                    <p class="harga">Rp 1.200.000</p>
+                    <a href="detail.html?id=bali-2d1n" class="btn-secondary" data-i18n="btn_detail">View Detail</a>
+                </div>
+                <div class="paket-card">
+                    <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bali Kintamani Tour">
+                    <h3 data-i18n="card_3d2n_title">Bali 3 Days 2 Nights Package</h3>
+                    <p><strong data-i18n="lbl_duration">Duration:</strong> 3 Days 2 Nights</p>
+                    <p><strong data-i18n="lbl_dest">Destination:</strong> <span data-i18n="card_3d2n_dest">Nusa Dua, Uluwatu, Kintamani, Ubud</span></p>
+                    <p><strong data-i18n="lbl_facilities">Facilities:</strong> <span data-i18n="card_3d2n_fac">Hotel, Transport, Meals, Guide, Spa</span></p>
+                    <p class="harga">Rp 2.500.000</p>
+                    <a href="detail.html?id=bali-3d2n" class="btn-secondary" data-i18n="btn_detail">View Detail</a>
+                </div>
+                <div class="paket-card">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Honeymoon Bali">
+                    <h3 data-i18n="card_honey_title">Bali Honeymoon Package</h3>
+                    <p><strong data-i18n="lbl_duration">Duration:</strong> 4 Days 3 Nights</p>
+                    <p><strong data-i18n="lbl_dest">Destination:</strong> <span data-i18n="card_honey_dest">Jimbaran, Ubud, Nusa Penida</span></p>
+                    <p><strong data-i18n="lbl_facilities">Facilities:</strong> <span data-i18n="card_honey_fac">Resort, Romantic Dinner, Spa, Private Guide</span></p>
+                    <p class="harga">Rp 4.000.000</p>
+                    <a href="detail.html?id=honeymoon" class="btn-secondary" data-i18n="btn_detail">View Detail</a>
+                </div>
+                <div class="paket-card">
+                    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Family Bali">
+                    <h3 data-i18n="card_family_title">Bali Family Package</h3>
+                    <p><strong data-i18n="lbl_duration">Duration:</strong> 3 Days 2 Nights</p>
+                    <p><strong data-i18n="lbl_dest">Destination:</strong> <span data-i18n="card_family_dest">Waterbom, Safari Park, Sanur Beach</span></p>
+                    <p><strong data-i18n="lbl_facilities">Facilities:</strong> <span data-i18n="card_family_fac">Family Hotel, Transport, Kids Activities</span></p>
+                    <p class="harga">Rp 3.000.000</p>
+                    <a href="detail.html?id=family" class="btn-secondary" data-i18n="btn_detail">View Detail</a>
+                </div>
+                <div class="paket-card">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Private Tour Bali">
+                    <h3 data-i18n="card_private_title">Bali Private Tour Package</h3>
+                    <p><strong data-i18n="lbl_duration">Duration:</strong> Flexible</p>
+                    <p><strong data-i18n="lbl_dest">Destination:</strong> <span data-i18n="card_private_dest">Custom (Ubud, Mt. Batur, etc)</span></p>
+                    <p><strong data-i18n="lbl_facilities">Facilities:</strong> <span data-i18n="card_private_fac">Private Driver, Guide, VIP Transport</span></p>
+                    <p class="harga">Rp 5.000.000+</p>
+                    <a href="detail.html?id=private" class="btn-secondary" data-i18n="btn_detail">View Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section id="galeri" class="galeri">
+        <div class="container">
+            <h2 data-i18n="sect_gallery">Bali Destinations Gallery</h2>
+            <div class="galeri-grid">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pantai Bali">
+                <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pura Bali">
+                <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Gunung Bali">
+                <img src="https://images.unsplash.com/photo-1558005137-196838c06d83?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sawah Bali">
+                <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Ubud Bali">
+                <img src="https://images.unsplash.com/photo-1598324789736-4861f89564a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nusa Bali">
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Kami Section -->
+    <section class="keunggulan">
+        <div class="container">
+            <h2 data-i18n="sect_adv">Our Advantages</h2>
+            <div class="keunggulan-grid">
+                <div class="keunggulan-item">
+                    <div class="icon">💰</div>
+                    <h3 data-i18n="adv_price">Affordable Price</h3>
+                    <p data-i18n="adv_price_desc">Competitive prices without compromising quality.</p>
+                </div>
+                <div class="keunggulan-item">
+                    <div class="icon">🚗</div>
+                    <h3 data-i18n="adv_driver">Experienced Driver</h3>
+                    <p data-i18n="adv_driver_desc">Professional and friendly team for a safe trip.</p>
+                </div>
+                <div class="keunggulan-item">
+                    <div class="icon">🛋️</div>
+                    <h3 data-i18n="adv_car">Comfortable Car</h3>
+                    <p data-i18n="adv_car_desc">Clean and AC-equipped fleet for your comfort.</p>
+                </div>
+                <div class="keunggulan-item">
+                    <div class="icon">⭐</div>
+                    <h3 data-i18n="adv_service">Professional Service</h3>
+                    <p data-i18n="adv_service_desc">24/7 service committed to customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="tentang">
+        <div class="container">
+            <h2 data-i18n="sect_about">About Us</h2>
+            <p data-i18n="about_desc">Harmony Bali Tour is a professional travel agency committed to providing the best travel experience in Bali. With an experienced team, we offer complete tour packages, from daily tours to private trips. We ensure every journey is full of beautiful memories with affordable prices and excellent service.</p>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="kontak">
+        <div class="container">
+            <h2 data-i18n="sect_contact">Contact Us</h2>
+            <div class="kontak-content">
+                <div class="kontak-info">
+                    <p><strong data-i18n="addr_title">Address:</strong> Jl. Sunset Road, Kuta, Bali 80361</p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@harmonybali.com">info@harmonybali.com</a></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.123456789012!2d115.1666667!3d-8.6666667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0b5b9b9b%3A0x1234567890abcdef!2sKuta%2C%20Bali!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <form class="kontak-form">
+                    <input type="text" placeholder="Name" required data-i18n="form_name">
+                    <input type="email" placeholder="Email" required data-i18n="form_email">
+                    <textarea placeholder="Message" required data-i18n="form_msg"></textarea>
+                    <button type="submit" class="btn-primary" data-i18n="form_btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Harmony Bali Tour</h3>
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#paket" data-i18n="nav_packages">Packages</a></li>
+                    <li><a href="#galeri" data-i18n="nav_gallery">Gallery</a></li>
+                    <li><a href="#tentang" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="#kontak" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <p data-i18n="footer_copy">&copy; 2026 Harmony Bali Tour. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20pesan%20paket%20wisata" class="whatsapp-float" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
